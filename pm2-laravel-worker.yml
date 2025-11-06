@@ -1,0 +1,11 @@
+apps:
+  - name: Eugia Pharma Admin
+    script: "php artisan serve  --host 0.0.0.0 --port 8000"
+    args: serve
+    instances: 1
+    autorestart: true
+    watch: false
+    env:
+      APP_ENV: production
+      APP_DEBUG: false
+
